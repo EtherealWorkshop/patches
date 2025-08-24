@@ -373,7 +373,7 @@ boot_chromeos() {
 }
 echo "starting the shimboot bootloader"
 enable_debug_console "$TTY2"
-local valid_partitions="$(find_all_partitions)"
+valid_partitions="$(find_all_partitions)"
 while true; do
     clear
     print_selector "${valid_partitions}"
